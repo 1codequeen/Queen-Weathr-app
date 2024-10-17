@@ -16,14 +16,34 @@
   <body>
     <div class="weatherApp-border">
       <header>
-        <form>
-          <input ="search" placeholder="Enter a city..." required />
-          <input ="submit" value="search" />
+        <form class="search-bar" id="search-bar">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            id="search-bar-input"
+            class="search-bar-input"
+          />
+          <input type="submit" value="search" class="search-bar-button" />
         </form>
       </header>
-      <h1>Paris</h1>
-      <h2>21 °C</h2>
-      <p>Tuesday 16:52, few clouds Humidity: 58%, Wind: 7.72km/h</p>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city">Paris</h1>
+            <p class="weather-app-details">
+              Tuesday 16:52, few clouds
+              <br />
+              Humidity:<strong> 58%</strong>, Wind:<strong>7.72km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature">
+            <div class="weather-app-icon">⛅</div>
+            <div class="weather-app-value">21</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+      </main>
       <footer>
         This project was coded by
         <a href="https://github.com/1codequeen" target="_blank">Queen Yona,</a>
