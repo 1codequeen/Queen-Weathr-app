@@ -67,6 +67,8 @@ main {
 }
 .weather-app-unit {
   margin-top: 44px;
+  font-weight: bold;
+  font-size: larger;
 }
 
 footer {
